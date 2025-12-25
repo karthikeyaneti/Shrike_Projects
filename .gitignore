@@ -1,0 +1,27 @@
+# --- Go Configure / FPGA Build Artifacts ---
+# Ignore the entire build directory within the ffpga folder
+**/ffpga/build/
+**/ffpga/work/
+
+# Ignore specific log and temporary files
+*.log
+*.jou
+*.pb
+*.vcd
+*.str
+*.zip
+
+# --- Firmware Build Artifacts ---
+# Ignore compiled binaries and object files other than firmware/*.bin files
+*.elf
+*.hex
+*.bin
+*.o
+
+!**/firmware/*.bin
+
+# --- System / IDE Files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
